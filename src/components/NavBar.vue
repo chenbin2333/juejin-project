@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-menu--horizontal > .el-menu-item.is-active {
+.el-menu--horizontal>.el-menu-item.is-active {
   border-bottom: none;
   color: #409eff;
 }
