@@ -1,0 +1,15 @@
+{
+  "navList": [{
+    "name": "首页",
+    "path": "/home"
+  }, {
+    "name": "沸点",
+    "path": "/feidian"
+  }, {
+    "name": "话题",
+    "path": "/huati"
+  }, {
+    "name": "小册",
+    "path": "/xiaoce"
+  }]
+}

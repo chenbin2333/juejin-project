@@ -3,7 +3,7 @@
     <div class="firstdiv">
       <header class="ban-xin layout-header">
         <div class="logo">
-          <img src="../assets/images\/png/logo.svg" alt="" />
+          <img src="../assets/images\/png/logo.svg" alt=""/>
         </div>
         <NavBar :list="navList" :fontSize="'16px'"></NavBar>
       </header>
@@ -16,31 +16,29 @@
 
 <script>
 // @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
+import NavBar from '../components/NavBar.vue'
+import indexApi from '../api/index.js'
 
 export default {
-  data () {
+  data() {
     return {
-      navList: [{
-        name: '首页',
-        path: '/home'
-      }, {
-        name: '沸点',
-        path: '/feidian'
-      }, {
-        name: '话题',
-        path: '/huati'
-      }, {
-        name: '小册',
-        path: '/xiaoce'
-      }]
+      navList: []
     }
   },
   name: 'HomeView',
   components: {
     NavBar,
-    NavBar
   },
+  created() {
+    this.getList()
+  },
+  methods: {
+    getList() {
+      indexApi.test3(1).then((res) => {
+        this.navList = res.data.navList
+      });
+    }
+  }
 }
 </script>
 
@@ -49,9 +47,11 @@ export default {
   border-bottom: 1px solid #ddd;
   background: #fff;
 }
+
 .layout-header {
   display: flex;
   background: #fff;
+
   .logo {
     img {
       width: 120px;
