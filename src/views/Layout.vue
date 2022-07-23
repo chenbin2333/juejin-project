@@ -1,44 +1,63 @@
 <template>
   <div class="layout">
-    <header class="ban-xin">
-      <div class="logo"></div>
-      <el-menu
-        :default-active="activeIndex"
-        class="el-menu-demo"
-        mode="horizontal"
-        @select="handleSelect"
-      >
-        <el-menu-item index="1">处理中心</el-menu-item>
-        <el-submenu index="2">
-          <template slot="title">我的工作台</template>
-          <el-menu-item index="2-1">选项1</el-menu-item>
-          <el-menu-item index="2-2">选项2</el-menu-item>
-          <el-menu-item index="2-3">选项3</el-menu-item>
-          <el-submenu index="2-4">
-            <template slot="title">选项4</template>
-            <el-menu-item index="2-4-1">选项1</el-menu-item>
-            <el-menu-item index="2-4-2">选项2</el-menu-item>
-            <el-menu-item index="2-4-3">选项3</el-menu-item>
-          </el-submenu>
-        </el-submenu>
-        <el-menu-item index="3" disabled>消息中心</el-menu-item>
-        <el-menu-item index="4"
-          ><a href="https://www.ele.me" target="_blank"
-            >订单管理</a
-          ></el-menu-item
-        >
-      </el-menu>
-    </header>
+    <div class="firstdiv">
+      <header class="ban-xin layout-header">
+        <div class="logo">
+          <img src="../assets/images\/png/logo.svg" alt="" />
+        </div>
+        <NavBar :list="navList" :fontSize="'16px'"></NavBar>
+      </header>
+    </div>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import NavBar from '@/components/NavBar.vue'
 
 export default {
+  data () {
+    return {
+      navList: [{
+        name: '首页',
+        path: '/home'
+      }, {
+        name: '沸点',
+        path: '/feidian'
+      }, {
+        name: '话题',
+        path: '/huati'
+      }, {
+        name: '小册',
+        path: '/xiaoce'
+      }]
+    }
+  },
   name: 'HomeView',
   components: {
-
-  }
+    NavBar,
+    NavBar
+  },
 }
 </script>
+
+<style lang="less" scoped>
+.layout .firstdiv {
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+.layout-header {
+  display: flex;
+  background: #fff;
+  .logo {
+    img {
+      width: 120px;
+      margin-top: 17px;
+      margin-right: 20px;
+    }
+  }
+}
+</style>
