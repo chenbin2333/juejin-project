@@ -17,7 +17,7 @@
 <script>
 // @ is an alias to /src
 import NavBar from '../components/NavBar.vue'
-import indexApi from '../api/index.js'
+import {test3} from '../api/index.js'
 
 export default {
   data() {
@@ -34,10 +34,12 @@ export default {
   },
   methods: {
     getList() {
-      indexApi.test3(1).then((res) => {
+      test3(1).then((res) => {
         this.navList = res.data.navList
       });
     }
+  },
+  mounted() {
   }
 }
 </script>
