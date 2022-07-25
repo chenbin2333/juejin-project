@@ -1,10 +1,11 @@
 @import url('./reset.css');
 
 .ban-xin {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 body {
   background: #eee;
+  height: 960px;
 }

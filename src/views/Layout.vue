@@ -3,7 +3,7 @@
     <div class="firstdiv">
       <header class="ban-xin layout-header">
         <div class="logo">
-          <img src="../assets/images\/png/logo.svg" alt=""/>
+          <img src="../assets/images\/png/logo.svg" alt="" />
         </div>
         <NavBar :list="navList" :fontSize="'16px'"></NavBar>
       </header>
@@ -17,28 +17,27 @@
 <script>
 // @ is an alias to /src
 import NavBar from '../components/NavBar.vue'
-import indexApi from '../api/index.js'
+import { getNav } from '@/api/index'
 
 export default {
-  data() {
+  data () {
     return {
-      navList: []
+      navList: [],
     }
   },
   name: 'HomeView',
   components: {
     NavBar,
   },
-  created() {
-    this.getList()
+  created () {
+    this.getNavList()
   },
   methods: {
-    getList() {
-      indexApi.test3(1).then((res) => {
-        this.navList = res.data.navList
-      });
-    }
-  }
+    async getNavList () {
+      const { data } = await getNav()
+      this.navList = data.navList
+    },
+  },
 }
 </script>
 

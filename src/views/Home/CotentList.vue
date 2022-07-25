@@ -1,14 +1,26 @@
 <template>
   <div class="content-list ban-xin">
-    <ContentItem v-for="i in 10" :key="i"></ContentItem>
+    <ContentItem
+      v-for="(item, index) in contentList"
+      :listItem="item"
+      :key="index"
+    >
+    </ContentItem>
   </div>
 </template>
 
 <script>
 import ContentItem from './ContentItem.vue'
+
 export default {
   data () {
     return {}
+  },
+  props: {
+    contentList: {
+      type: Array,
+      default: () => []
+    }
   },
   components: { ContentItem }
 }

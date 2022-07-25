@@ -1,25 +1,31 @@
 <template>
   <div class="content-item">
     <div class="l">
-      <p>专栏 晓风残月 26月前</p>
-      <h3>call,apply和bind原生实现</h3>
-      <p>js基础</p>
+      <p>{{ listItem.author }}</p>
+      <h3>{{ listItem.title }}</h3>
+      <p>{{ listItem.category }}</p>
     </div>
     <div class="r">
-      <img src="https://vaegin.top/img/qingzi.jpeg" alt="" />
+      <img :src="listItem.img" alt="" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  props: {
+    listItem: {
+      type: Object,
+      default: () => { }
+    }
+  }
 }
 </script>
 
 <style lang="less" scoped>
 .content-item {
-  padding: 25px 40px;
+  height: 158px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #eee;
