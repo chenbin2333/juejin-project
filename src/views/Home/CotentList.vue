@@ -1,9 +1,9 @@
 <template>
   <div class="content-list ban-xin">
     <ContentItem
-      v-for="(item, index) in contentList"
-      :listItem="item"
-      :key="index"
+        v-for="(item, index) in contentList"
+        :listItem="item"
+        :key="index"
     >
     </ContentItem>
   </div>
@@ -13,8 +13,11 @@
 import ContentItem from './ContentItem.vue'
 
 export default {
-  data () {
-    return {}
+  data() {
+    return {
+    }
+  },
+  created() {
   },
   props: {
     contentList: {
@@ -22,7 +25,7 @@ export default {
       default: () => []
     }
   },
-  components: { ContentItem }
+  components: {ContentItem}
 }
 </script>
 

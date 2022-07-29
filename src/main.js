@@ -5,8 +5,6 @@ import router from './router'
 import store from './store'
 //引入mock
 require('./mock/mockServe')
-// 引入公共样式
-import './styles/common.css'
 // 引入element-ui
 import 'element-ui/lib/theme-chalk/index.css'
 import Element from 'element-ui'

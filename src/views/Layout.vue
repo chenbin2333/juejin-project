@@ -1,62 +1,40 @@
 <template>
-  <div class="layout">
-    <div class="firstdiv">
-      <header class="ban-xin layout-header">
-        <div class="logo">
-          <img src="../assets/images\/png/logo.svg" alt="" />
-        </div>
-        <NavBar :list="navList" :fontSize="'16px'"></NavBar>
-      </header>
-    </div>
-    <div class="container">
+  <div id="_layout">
+    <div id="juejin">
       <router-view></router-view>
+      <div class="global-component-box"></div>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import NavBar from '../components/NavBar.vue'
-import { getNav } from '@/api/index'
-
 export default {
-  data () {
-    return {
-      navList: [],
-    }
+  data() {
+    return {}
   },
-  name: 'HomeView',
+  name: 'Layout',
   components: {
-    NavBar,
   },
-  created () {
-    this.getNavList()
+  created() {
   },
   methods: {
-    async getNavList () {
-      const { data } = await getNav()
-      this.navList = data.navList
+    handleScroll() {
+      //为了保证兼容性，这里取两个值，哪个有值取哪一个
+      //scrollTop就是触发滚轮事件时滚轮的高度
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      this.$store.commit('isVisible', scrollTop <= 300)
+      console.log("滚动距离" + scrollTop);
+      this.$store.commit('isTop', scrollTop >= 300)
+      this.$store.commit('isAdvertisement', scrollTop >= 1600)
     },
   },
+  mounted() {
+    document.addEventListener("scroll", this.handleScroll)
+  }
 }
 </script>
-
 <style lang="less" scoped>
-.layout .firstdiv {
-  border-bottom: 1px solid #ddd;
-  background: #fff;
-}
-
-.layout-header {
-  display: flex;
-  background: #fff;
-
-  .logo {
-    img {
-      width: 120px;
-      margin-top: 17px;
-      margin-right: 20px;
-    }
-  }
+#_layout, #juejin {
+  width: 100%;
 }
 </style>
