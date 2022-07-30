@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Layout from '../views/Layout.vue'
+import ReportPart from "@/views/Report/ReportPart";
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,18 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/',
+    name: 'ReportPart',
+    component: ReportPart,
+    redirect: '/report',
+    children: [
+      {
+        path: '/report',
+        component: () => import('../views/Report/ReportPart')
+      }
+    ]
+  }
 ]
 
 const router = new VueRouter({
