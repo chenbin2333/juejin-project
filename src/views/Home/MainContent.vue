@@ -1,9 +1,12 @@
 <template>
   <main class="container">
     <div class="view">
+      <!-- 内容导航 -->
       <nav class="view-nav" :class="{'top':top}"></nav>
       <div class="main-content">
+        <!-- 左 -->
         <MainContentLeft></MainContentLeft>
+        <!-- 右 -->
         <MainContentRight></MainContentRight>
       </div>
     </div>

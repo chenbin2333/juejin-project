@@ -1,7 +1,8 @@
 <template>
   <div class="main-header-box">
     <header :class="{'main-header':true,'visible':isVisible}">
-      <div class="container"></div>
+      <div class="container">
+      </div>
     </header>
   </div>
 </template>

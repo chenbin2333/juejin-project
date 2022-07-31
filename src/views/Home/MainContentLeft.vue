@@ -1,5 +1,6 @@
 <template>
   <div class="main-content-left">
+    <!-- 内容列表 -->
     <ContentList :contentList="contentList"></ContentList>
     <!--    <div class="loading">{{ loading ? "加载中" : "已经到底啦!~" }}</div>-->
   </div>
