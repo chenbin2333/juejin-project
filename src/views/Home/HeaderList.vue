@@ -7,7 +7,9 @@
       :class="{active:index===currentIndex}"
       @click="headerlist(index)"
     >
-      <span>{{item}}</span>
+      <span>
+        <a href="#">{{item}}</a>
+      </span>
     </div>
   </div>
 </template>
@@ -56,12 +58,21 @@ export default {
   color: #515767;
   font-size: 14px;
 }
-.header-list-item span {
+.active a:first-child {
+  color: #1e80ff;
+}
+.header-list-item span{
   /* padding: 10px; */
   padding-bottom: 21px;
   line-height: 100%;
 }
-.active span:hover {
+.header-list-item span a{
+  text-decoration: none;
+  color:#000;
+  padding-bottom: 21px;
+  line-height: 100%;
+}
+.active span a:hover {
   border-bottom: 3px solid #1e80ff;
 }
 
