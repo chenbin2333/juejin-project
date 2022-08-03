@@ -44,6 +44,7 @@ export default {
 <style lang="less" scoped>
 #_layout, #juejin {
   width: 100%;
+  background-color: #f4f5f5;
 }
 .report{
   width: 150px;
