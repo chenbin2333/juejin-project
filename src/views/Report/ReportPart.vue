@@ -1,6 +1,6 @@
 <template>
 <div class="background">
-<!--  <header></header>-->
+  <Header></Header>
   <div class="container">
     <h1>举报</h1>
     <div class="current-row"></div>
@@ -12,77 +12,6 @@
 
           <el-radio v-model="radio" label="1">备选项</el-radio>
           <el-radio v-model="radio" label="2">备选项</el-radio>
-
-<!--          <div class="byte-radio-group">
-            <label class="byte-radio__wrapper">
-                <span class="byte-radio__radio-inner">
-                  <input type="radio" class="byte-radio__original">
-                  <span></span>
-                </span>
-                <span>
-                  内容质量太差
-                </span>
-            </label>
-
-            <label>
-              <span>
-                <input type="radio">
-                <span></span>
-              </span>
-              <span>
-                低俗色情
-              </span>
-            </label>
-
-            <label>
-              <span>
-                <input type="radio">
-                <span></span>
-              </span>
-              <span>
-                涉及违法
-              </span></label>
-
-            <label>
-              <span>
-                <input type="radio">
-                <span></span>
-              </span>
-              <span>
-                恶意营销
-              </span>
-            </label>
-
-            <label>
-              <span>
-                <input type="radio">
-                <span></span>
-              </span>
-              <span>
-                内容抄袭
-              </span>
-            </label>
-
-            <label>
-              <span>
-                <input type="radio">
-                <span>
-                </span></span>
-              <span>
-                其他原因
-              </span>
-            </label>
-
-            <label>
-              <span>
-                <input type="radio">
-                <span>
-                </span></span>
-              <span>
-                侵犯名誉/隐私/著作/肖像权等
-              </span>
-            </label>
-          </div>-->
         </div>
       </div>
     </form>
@@ -207,18 +136,11 @@ export default {
       position: relative;
       font-size: 14px;
       line-height: 32px;
-      .byte-form-item__content{
-        zoom: 1;
-        position: relative;
-        font-size: 14px;
-        line-height: 32px;
         h2{
           font-weight: 600;
           font-size: 17px;
           line-height: 24px;
           margin-bottom: 20px;
-        }
-
         }
       }
     }

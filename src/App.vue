@@ -10,6 +10,6 @@
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   width: 100%;
-  min-height: 2000px;
+  //min-height: 2000px;
 }
 </style>
