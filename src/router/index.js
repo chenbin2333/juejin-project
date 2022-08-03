@@ -18,6 +18,10 @@ const routes = [
             {
                 path: '/report',
                 component: () => import('../views/Report/ReportPart')
+            },
+            {
+                path: '/article',
+                component: () => import('../views/Article/Article')
             }
         ]
     }
