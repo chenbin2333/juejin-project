@@ -1,7 +1,7 @@
 <template>
   <div id="_layout">
     <div id="juejin">
-      <router-view></router-view>
+      <HomeContainer></HomeContainer>
       <div class="global-component-box"></div>
       <!-- 方便我写页面不用管,位置要是不合适你们可以放到其他地方-->
      <button class="report" @click="go">点我跳转举报页面</button>
@@ -10,12 +10,14 @@
 </template>
 
 <script>
+import HomeContainer from "@/views/Home/HomeContainer";
 export default {
   data() {
     return {}
   },
   name: 'Layout',
   components: {
+    HomeContainer
   },
   created() {
   },

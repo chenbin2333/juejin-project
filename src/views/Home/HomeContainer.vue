@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <Header></Header>
-    <MainContent></MainContent>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Header from "./Header";
+import Header from "../../components/Header";
 import MainContent from "./MainContent";
 
 export default {

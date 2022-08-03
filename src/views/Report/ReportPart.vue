@@ -143,7 +143,7 @@
 </template>
 
 <script>
-import Header from "@/views/Home/Header";
+import Header from "../../components/Header";
 
 export default {
   name: "ReportPart",
