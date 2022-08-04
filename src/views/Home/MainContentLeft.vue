@@ -1,8 +1,15 @@
 <template>
-  <div class="main-content-left">
+<div class="main-content-left">
+    <div class="list-header">
+                    <span style="color: #1e80ff;">推荐</span>
+                    <span>最新</span>
+                    <span class="last">热榜</span>
+                </div>
+    <div class="list-content">
     <!-- 内容列表 -->
     <ContentList :contentList="contentList"></ContentList>
     <!--    <div class="loading">{{ loading ? "加载中" : "已经到底啦!~" }}</div>-->
+  </div>
   </div>
 </template>
 <script>
@@ -66,13 +73,42 @@ export default {
 
 <style scoped>
 .main-content-left {
-  margin-right: 21.667rem;
-  border-radius: 2px;
-  width: 700px;
-  height: 100%;
-  background-color: #2c3e50;
+    width: 700px;
+    background: #fff;
+
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    border-radius: 2px;
+}
+.list-header {
+    display: flex;
+    border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+    padding: 15.6px 0 15px 11px;
 }
 
+.list-header>span {
+  
+    border-right: 1px solid hsla(0,0%,59.2%,.2);
+    padding: 0 14px 0 14px;
+    font-size: 14.04px;
+    color: #909090;
+    cursor: pointer;
+}
+
+.list-header>span:hover {
+    color: #007fff;
+}
+
+.list-header .last {
+    border-right: none;
+}
+
+.list-content {
+    cursor: pointer;
+}
+
+.list-content:hover {
+    background: #fafafa;
+}
 .loading {
   margin-top: 10px;
   background: #fff;
