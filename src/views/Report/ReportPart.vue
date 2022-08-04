@@ -9,13 +9,15 @@
       <div class="byte-form-item__content">
         <div class="byte-form-item__content">
           <h2>举报问题</h2>
-          <el-radio v-model="radio" label="1">内容质量太差</el-radio>
-          <el-radio v-model="radio" label="2">低俗色情</el-radio>
-          <el-radio v-model="radio" label="3">涉及违法</el-radio>
-          <el-radio v-model="radio" label="4">恶意营销</el-radio>
-          <el-radio v-model="radio" label="5">内容抄袭</el-radio>
-          <el-radio v-model="radio" label="6">其他原因</el-radio>
-          <el-radio v-model="radio" label="7">侵犯名誉/隐私/著作/肖像权等</el-radio>
+          <el-radio v-model="radio" label="1" style="padding-right: 20px">内容质量太差</el-radio>
+          <el-radio v-model="radio" label="2" style="padding-right: 20px">低俗色情</el-radio>
+          <el-radio v-model="radio" label="3" style="padding-right: 20px">涉及违法</el-radio>
+          <el-radio v-model="radio" label="4" style="padding-right: 20px">恶意营销</el-radio>
+          <el-radio v-model="radio" label="5" style="padding-right: 20px">内容抄袭
+
+          </el-radio>
+          <el-radio v-model="radio" label="6" style="padding-right: 20px">其他原因</el-radio>
+          <el-radio v-model="radio" label="7" style="padding-right: 20px"  v-if="" >侵犯名誉/隐私/著作/肖像权等</el-radio>
         </div>
       </div>
     </form>
@@ -59,7 +61,6 @@
       <img width="100%" :src="dialogImageUrl" alt="">
     </el-dialog>
 
-
 <!--    举报描述部分-->
     <h2>举报描述</h2>
     <el-input
@@ -69,8 +70,9 @@
         v-model="textarea">
     </el-input>
     <el-row>
-      <el-button type="primary" class="submit-but">确认</el-button>
+      <el-button type="primary" class="submit-but" @click="open()">确认</el-button>
     </el-row>
+
   </div>
 </div>
 </template>
@@ -87,7 +89,7 @@ export default {
       dialogImageUrl: '',
       dialogVisible: false,
       disabled: false,
-      radio: '1'
+      radio: '1',
     }
   },
   methods: {
@@ -100,7 +102,12 @@ export default {
     },
     handleDownload(file) {
       console.log(file);
-    }
+    },
+    open(){
+      this.$alert('您的举报我们已经收到，稀土掘金团队会尽快核实处理，并第一时间告知您结果', '举报成功', {
+        confirmButtonText: '确定',
+      });
+    },
   },
   components: {
     Header
