@@ -1,21 +1,21 @@
 {
   "List": [
     {
-      "author": "专栏 晓风残月 26月前",
-      "title": "call,apply和bind原生实现",
-      "category": "js基础",
+      "author": "@cname() | 1月前 | 前端",
+      "title": "@ctitle()",
+      "category": "@cparagraph()",
       "img": "https://vaegin.top/img/qingzi.jpeg"
     },
     {
-      "author": "专栏 晓风残月 26月前",
-      "title": "call,apply和bind原生实现",
-      "category": "js基础",
+      "author": "@cname() | 2月前 | 前端",
+      "title": "@ctitle()",
+      "category": "@cparagraph(1,2)",
       "img": "https://vaegin.top/img/qingzi.jpeg"
     },
     {
-      "author": "专栏 晓风残月 26月前",
-      "title": "call,apply和bind原生实现",
-      "category": "js基础",
+      "author": "@cname() | 1月前 | 前端",
+      "title": "@ctitle()",
+      "category": "@cparagraph(1,2)",
       "img": "https://vaegin.top/img/qingzi.jpeg"
     },
     {

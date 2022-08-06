@@ -30,7 +30,7 @@ export default {
 
 <style lang="less" scoped>
 .content-item {
-  height: 158px;
+  height: 141px;
   padding: 40px;
   display: flex;
   justify-content: space-between;
@@ -39,6 +39,11 @@ export default {
   p {
     font-size: 14px;
     color: #bbb;
+    width: 460px;
+    overflow:hidden;
+	  text-overflow:ellipsis;
+	  white-space:nowrap
+
   }
 
   h3 {
@@ -48,8 +53,9 @@ export default {
   }
 
   img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 80px;
+    margin-top: 20px;
   }
 }
 </style>
