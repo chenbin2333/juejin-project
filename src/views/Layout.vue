@@ -30,6 +30,8 @@ export default {
       console.log("滚动距离" + scrollTop);
       this.$store.commit('isTop', scrollTop >= 300)
       this.$store.commit('isAdvertisement', scrollTop >= 1600)
+
+      this.$store.commit('isSticky', scrollTop >= 800)
     },
     //跳转到举报页面
     go() {

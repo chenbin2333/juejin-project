@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div :class="{'container':isContainer,'view-container':!isContainer}">
     <Header></Header>
     <router-view></router-view>
   </div>
@@ -15,6 +15,11 @@ export default {
     Header,
     MainContent
   },
+  computed:{
+    isContainer(){
+      return this.$store.state.isContainer
+    }
+  }
 }
 </script>
 
@@ -24,5 +29,8 @@ export default {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
+}
+.view-container{
+  width:100%;
 }
 </style>

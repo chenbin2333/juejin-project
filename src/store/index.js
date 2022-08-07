@@ -9,7 +9,10 @@ const state = {
     //主页面主要内容区导航栏是否向上平移
     top: false,
     //主页面 主要内容区域  右边广告是否隐藏
-    advertisement: false
+    advertisement: false,
+    //文章页面目录是否贴在窗口处
+    sticky: false,
+    isContainer: true,
 }
 
 const actions = {}
@@ -23,6 +26,12 @@ const mutations = {
     },
     isAdvertisement(state, value) {
         state.advertisement = value
+    },
+    isSticky(state, value) {
+        state.sticky = value
+    },
+    isContainer(state, value) {
+        state.isContainer = value
     }
 }
 const getters = {}

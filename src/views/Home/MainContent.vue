@@ -80,8 +80,6 @@ export default {
     min-width: min-content;
     max-width: 960px;
     margin: 0 auto;
-
-
     font-size: 13.92px;
     line-height: 46px;
 }
@@ -104,17 +102,13 @@ export default {
     color: #1e80ff;
 }
 .main {
-    margin: 0 auto;
-    margin-top: 116px;
-    display: flex;
+  margin: 116px auto 0;
+  display: flex;
     justify-content: center;
 }
 .left {
     width: 700px;
     background: #fff;
-    
-
-
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
     border-radius: 2px;
 }

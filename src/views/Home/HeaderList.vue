@@ -46,10 +46,8 @@ export default {
   background-color: #fff;
   height: 100%;
   line-height: 100%;
-  margin: auto;
   width: 390px;
-  height: 100%;
-  margin-left: 156px;
+  margin: auto auto auto 156px;
   align-items: center;
   justify-content: space-between;
   position: absolute;

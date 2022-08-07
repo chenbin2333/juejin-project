@@ -3,16 +3,14 @@
     margin: 0;
     padding: 0;
 }
-
 /* 设置默认字体 */
 html, body {
+    background-color: #f4f5f5;
     font-size: 12px;
     line-height: normal;
     -webkit-font-smoothing: unset !important;
     font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial !important;
 }
-
-
 /* 重置列表元素 */
 ul, ol {
     list-style: none;
