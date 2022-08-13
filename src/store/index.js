@@ -13,6 +13,7 @@ const state = {
     //文章页面目录是否贴在窗口处
     sticky: false,
     isContainer: true,
+    roll: 0
 }
 
 const actions = {}
@@ -32,6 +33,9 @@ const mutations = {
     },
     isContainer(state, value) {
         state.isContainer = value
+    },
+    isRoll(state, value) {
+        state.roll = value
     }
 }
 const getters = {}
