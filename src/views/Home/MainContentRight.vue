@@ -119,7 +119,24 @@
       </ul>
     </div>
 
-    <div class="sidebar-block" :class="{'sticky-block':advertisement}"></div>
+    <div class="sidebar-block" :class="{'sticky-block':advertisement}">
+      <!-- right-下半部分 -->
+      <div class="right-2">
+      <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c6575f7b7124236b0b0deffc2f6c663~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" alt="">
+    </div>
+
+    <div class="right-3">
+        <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a44a1763fd4b4f63ac82735d6ce28142~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" alt="">
+    </div>
+
+    <div class="right-4">
+        <img width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQMAAACEqAqfAAAABlBMVEX///8dffqGxf/kAAAC2klEQVR42u3dQXKcMBCFYU2x8DJHyFHmaPhoHIUjZOkFFRKUFz2LRjVjyiKuyv9WeNTz4RWoGqFJhBBC/pd8W3f5sX16345efx/c1nUutRpM6WXd5Q0LCwsL62pLg0tKowYfWcnxqT14l6VCWa/JGbGwsLCw+lnfy1U7XO91PCVl2I6zpS8tWFhYWFgXWkP+Q5YybcdnrSXl3CpLwcLCwsI6YeVjWYoKp/OWy7GwsLCw/oHl7HvuspzYg8HCwsLC6mfViX0TX9I1OD35XNTl7udgYWFhYX2uVcpVcWzFxNuDLc/vY7CwsLCw3q/bnqulfj+LlQcdW8WdP2otbtbkQSwsLCysSyy1War2tywv+R7eX+N1/OekatZgYWFhYXWxdEmXVUXPMufKcoIVe+6KSmwpgwcdLCwsLKwDa7RSWcpb40T72PK9Q6d2z133C32QsLCwsLB6W9XrN2HtigaTrL+FZfLvQSwsLCysnlZcE6jM+wm7rNXNGlv1vaP+H29YWFhYWOctJ75LGSwnWK0pvMuP98ZSIRYWFhbW51tVW/2l3DuU+FxUa1d0UjdosLCwsLC6W81MWl9Yvr8qturI8qldnmSFG4uOsbCwsLCa601KebhGO8/0TRRZ7r+rwRP7OXcsLCwsrJ6WovJw79CEXYWH7/yMWFhYWFgdrZhFlmPLDZZg5VMo3pZQg6Flky27ChYWFhZWsNrJ1hoKw5zcVliruOvnYGFhYWFdbcVU+4DnaH7vDQnjXilYWFhYWB2so31h4/4mTvythkeWypMtze+xsLCwsM5YOU9a7T2oirUkZzjar7a8sI+FhYWFJSv+5tkDa42Z9V5myzrK2LLyIBYWFhbWdZb75PXmJxoML9ZjYWFhYV1qObOtkKesRz2YEhViYWFhYbWt2Nv+yB5UjqwpPiiNk3//KD0WFhYWVierivvkHoz7m6zVJuFbsLCwsLC+uEUIIeSL5heoDbgJUHdTigAAAABJRU5ErkJggg==" alt="">
+        <div class="contentbox">
+            <div class="headline">下载稀土掘金APP</div>
+            <div class="desc">一个帮助开发者成长的社区</div>
+        </div>
+    </div>
+    </div>
   </aside>
 </template>
 
