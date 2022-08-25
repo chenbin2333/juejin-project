@@ -13,9 +13,7 @@
           <el-radio v-model="radio" label="2" style="padding-right: 20px">低俗色情</el-radio>
           <el-radio v-model="radio" label="3" style="padding-right: 20px">涉及违法</el-radio>
           <el-radio v-model="radio" label="4" style="padding-right: 20px">恶意营销</el-radio>
-          <el-radio v-model="radio" label="5" style="padding-right: 20px">内容抄袭
-
-          </el-radio>
+          <el-radio v-model="radio" label="5" style="padding-right: 20px">内容抄袭</el-radio>
           <el-radio v-model="radio" label="6" style="padding-right: 20px">其他原因</el-radio>
           <el-radio v-model="radio" label="7" style="padding-right: 20px"  v-if="" >侵犯名誉/隐私/著作/肖像权等</el-radio>
         </div>

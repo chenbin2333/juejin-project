@@ -8,7 +8,7 @@
             <span>晚上好！</span>
         </div>
         <button>
-          <span>去签到</span> 
+          <span>去签到</span>
         </button>
       </div>
       <div class="second-line">点亮你在社区的每一天</div>
@@ -161,7 +161,7 @@ export default {
   top: 0;
   right: 0;
   z-index: 1;
-  background-color: yellow;
+  /*background-color: yellow;*/
   height: 1440px;
 }
 /* right-1 */
@@ -338,7 +338,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 42px;
     font-weight: bold;
     color: #007fff;
@@ -385,7 +385,7 @@ export default {
 
 .sidebar-block {
   position: fixed;
-  background-color: green;
+  /*background-color: green;*/
   box-shadow: none;
   opacity: 0;
   transition: all .2s;
